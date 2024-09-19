@@ -7,9 +7,7 @@ type MainScreenProps = {
 };
 
 const MainScreen = ({ children, className }: MainScreenProps) => {
-  return (
-    <div className={cn("h-screen bg-zinc-950", className)}>{children}</div>
-  );
+  return <div className={cn("h-screen", className)}>{children}</div>;
 };
 
 export default MainScreen;
